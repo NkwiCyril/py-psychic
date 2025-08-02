@@ -20,13 +20,13 @@ import random
 list_of_words = ["programming", "code", "computer",
                  "linux", "support", "reddit", "python"]
 
-rand_index = random.randint(0, len(list_of_words) - 1)
-rand_word = list_of_words[rand_index]
-print(rand_word)
+# rand_index = random.randint(0, len(list_of_words) - 1)
+# rand_word = list_of_words[rand_index]
+
+rand_word = random.choice(list_of_words)
+
 attempts = 0
 max_attempts = 10
-
-global guess 
 
 print(f"You a total of {max_attempts} to guess the word correctly.")
 print(f"Either you guess the full word or you guess character by character,\n exhaust your attempts and finally guess the word after that")
